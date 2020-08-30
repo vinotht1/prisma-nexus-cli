@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+const program = require('commander');
+const chalk = require('chalk');
+
+console.log(chalk.blue('Prisma-Nexus Generator [Author: Vinoth Thangaparimanam]'));
+
+program
+  .version(require('../package').version)
+  .usage('<command> [options]')
+  .command('wizard', 'Start generator wizard', { isDefault: true })
+  .command('init', 'Create a local settings file (.reactgenerator)')
+  .parse(process.argv);
