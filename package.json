@@ -1,11 +1,13 @@
 {
-  "name": "prisma-nexus-cli",
-  "version": "1.0.0",
+  "name": "@vinoththangaparimanam/prisma-nexus-cli",
+  "version": "1.0.2",
   "description": "A CLI generator for prisma-nexus-postgresql-auth-acl",
   "preferGlobal": true,
   "bin": {
-    "pnc-app": "bin/react-generator",
-    "pnc-crud": ""
+    "prisma-nexus-generator": "bin/pnc-generator",
+    "prisma-nexus-generator-wizard": "bin/pnc-generator-wizard",
+    "prisma-nexus-app": "bin/pnc-generator",
+    "prisma-nexus-wizard": "bin/pnc-generator-wizard"
   },
   "keywords": [
     "prisma",
@@ -38,5 +40,18 @@
   },
   "engines": {
     "node": ">=6.0.0"
-  }
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinotht1/prisma-nexus-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vinotht1/prisma-nexus-cli/issues"
+  },
+  "homepage": "https://github.com/vinotht1/prisma-nexus-cli#readme"
 }

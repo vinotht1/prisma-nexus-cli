@@ -9,7 +9,6 @@ module.exports = function wizard(type, name) {
   let settings = Settings.getSettings(settingOverrides);
 
   let questions = Questions.getGeneratorQuestions(type, settings, name);
-  console.log(settings)
   inquirer.prompt(questions).then((answers) => {
     generate(answers.type || type, answers, settings);
   });
